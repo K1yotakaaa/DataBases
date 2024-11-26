@@ -1,4 +1,4 @@
---1
+--1st task
 CREATE OR REPLACE FUNCTION increase_value(val INTEGER)
 RETURNS INTEGER AS $$
 BEGIN
@@ -6,7 +6,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- 2
+--2nd task
 CREATE OR REPLACE FUNCTION compare_numbers(a INTEGER, b INTEGER, OUT result TEXT)
 AS $$
 BEGIN
@@ -20,7 +20,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- 3
+--3rd task
 CREATE OR REPLACE FUNCTION number_series(n INTEGER)
 RETURNS TABLE(series INTEGER) AS $$
 BEGIN
@@ -30,7 +30,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
---  4
+--4th task
 CREATE OR REPLACE FUNCTION find_employee(emp_name TEXT)
 RETURNS TABLE(employee_id INTEGER, employee_name TEXT, employee_position TEXT) AS $$
 BEGIN
@@ -38,7 +38,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
---  5
+--5th task
 CREATE OR REPLACE FUNCTION list_products(category TEXT)
 RETURNS TABLE(product_id INTEGER, product_name TEXT, product_price NUMERIC) AS $$
 BEGIN
@@ -46,7 +46,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
---  6
+--6th task
 CREATE OR REPLACE FUNCTION calculate_bonus(salary NUMERIC)
 RETURNS NUMERIC AS $$
 BEGIN
@@ -66,7 +66,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
---  7
+--7th task
 CREATE OR REPLACE FUNCTION complex_calculation(num1 INTEGER, str1 VARCHAR)
 RETURNS TEXT AS $$
 DECLARE
